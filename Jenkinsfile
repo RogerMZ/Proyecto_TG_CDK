@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Inicio_Enviroment') {
       steps {
-        echo 'Iniciando construcción de proyecto....'
+        echo 'Iniciando construcciÃ³n de proyecto....'
         sh 'env'
       }
     }
@@ -14,7 +14,7 @@ pipeline {
       }
     }
 
-    stage('Compilaci�n') {
+    stage('Compilación') {
       steps {
         sh '''gcc programa.c -o mi_programa
 ls -ltr'''
@@ -24,7 +24,7 @@ ls -ltr'''
 
     stage('Limpieza') {
       steps {
-        sh 'rm mi_porgrama'
+        sh 'rm mi_programa'
       }
     }
 
