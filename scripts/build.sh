@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build -t "rogermz/proyectoAPI:"$1
+docker build -t "rogermz/proyectoapi:"$1
 
