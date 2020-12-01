@@ -16,8 +16,8 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh '''#cat versionImage | xargs ./scripts/build.sh
-cat ./scripts/build.sh'''
+        sh '''cat versionImage | xargs ./scripts/build.sh
+#cat ./scripts/build.sh'''
       }
     }
 
