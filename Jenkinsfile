@@ -3,20 +3,20 @@ pipeline {
   stages {
     stage('Inicio_Enviroment') {
       steps {
-        echo 'Iniciando construcciÃ³n de proyecto....'
+        echo 'Iniciando construccion de proyecto....'
         sh 'env'
       }
     }
 
-    stage('Instalacion') {
+    stage('docker Env') {
       steps {
-        sh 'gcc -v'
+        sh 'docker -v'
       }
     }
 
-    stage('Limpieza') {
+    stage('Build') {
       steps {
-        sh '#rm mi_programa'
+        sh 'docker'
       }
     }
 
