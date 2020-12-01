@@ -1,6 +1,6 @@
 FROM python:3.7-alpine
 
-RUN apt update && apt add gcc
+RUN apk add build-base
 
 ADD ./src /code
 
