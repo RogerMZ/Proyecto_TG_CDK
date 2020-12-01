@@ -8,10 +8,10 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 from PIL import Image
 import io
-import numpy as np
+"""import numpy as np
 import matplotlib.pyplot as plt
 import base64
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression"""
 import json
 
 app = Flask(__name__)
@@ -128,6 +128,7 @@ def consumo():
     else:
         return "Not found method"
 
+"""
 @app.route("/reglin/", methods=["GET", "POST"])
 def predecir():
     if request.method == "POST":
@@ -179,6 +180,7 @@ def predecir():
             return jsonify(respuesta)
     elif request.method == "GET":
         return "Hola, GET!"
+"""
 
 @app.route('/rlineal', methods=['POST','GET'])
 def preRLinea():
