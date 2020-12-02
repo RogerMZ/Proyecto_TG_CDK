@@ -23,7 +23,7 @@ pipeline {
 
     stage('Run Container') {
       steps {
-        sh '''docker stop proyapi
+        sh '''docker stop proyapi || true
 docker run --name proyapi -itd --rm -p 5000:5000 rogermz/proyectoapi:1.1'''
       }
     }
