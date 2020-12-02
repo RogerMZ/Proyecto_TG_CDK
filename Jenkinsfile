@@ -30,6 +30,7 @@ docker run --name proyapi -itd --rm -p 5000:5000 rogermz/proyectoapi:1.1'''
 
     stage('test - QA') {
       steps {
+        sleep 10
         sh './scripts/test_cont.sh'
       }
     }
