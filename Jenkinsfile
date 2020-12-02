@@ -27,5 +27,11 @@ pipeline {
       }
     }
 
+    stage('test - QA') {
+      steps {
+        sh './scripts/test_cont.sh'
+      }
+    }
+
   }
 }
